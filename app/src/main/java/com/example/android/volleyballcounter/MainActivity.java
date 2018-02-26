@@ -37,7 +37,7 @@ public class MainActivity extends AppCompatActivity {
             pointsReset();
         }
         tieBreak();
-        gameMessage("Team A");
+        gameMessage(getString(R.string.team_a));
     }
 
     /**
@@ -52,7 +52,7 @@ public class MainActivity extends AppCompatActivity {
             pointsReset();
         }
         tieBreak();
-        gameMessage("Team B");
+        gameMessage(getString(R.string.team_b));
     }
 
     /**
@@ -93,6 +93,10 @@ public class MainActivity extends AppCompatActivity {
         displaySetsForTeamB(setsForTeamB);
     }
 
+    /**
+     * Reset asses for Team A and Team B.
+     */
+
     public void assesReset () {
         assesTeamA = 0;
         displayAssesTeamA(assesTeamA);
@@ -120,6 +124,10 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
+    /**
+     * Creating game over message
+     */
+
     public void gameMessage (String name) {
         if (setsForTeamA == 3 || setsForTeamB == 3)
         {
@@ -130,6 +138,8 @@ public class MainActivity extends AppCompatActivity {
     /**
      * Displays points for Team A.
      * Deklaracja funkcji, linia 95-98.
+     *
+     * @param score points for Team A.
      */
     public void displayPointsForTeamA(int score) {
         TextView scoreView = (TextView) findViewById(R.id.points_a_team);
@@ -138,6 +148,7 @@ public class MainActivity extends AppCompatActivity {
 
     /**
      * Displays sets for Team A.
+     * @param score sets for Team A.
      */
     public void displaySetsForTeamA(int score) {
         TextView scoreView = (TextView) findViewById(R.id.sets_a_team);
@@ -146,6 +157,7 @@ public class MainActivity extends AppCompatActivity {
 
     /**
      * Displays points for Team B.
+     * @param score points for Team B.
      */
     public void displayPointsForTeamB(int score) {
         TextView scoreView = (TextView) findViewById(R.id.points_b_team);
@@ -154,6 +166,7 @@ public class MainActivity extends AppCompatActivity {
 
     /**
      * Displays sets for Team B.
+     * @param score sets for Team B.
      */
     public void displaySetsForTeamB(int score) {
         TextView scoreView = (TextView) findViewById(R.id.sets_b_team);
@@ -162,6 +175,7 @@ public class MainActivity extends AppCompatActivity {
 
     /**
      * Displays game message.
+     * @param message is containing game over message to display it
      */
     public void displayGameMessage(String message) {
         TextView scoreView = (TextView) findViewById(R.id.game_message);
@@ -170,6 +184,7 @@ public class MainActivity extends AppCompatActivity {
 
     /**
      * Displays asses for team A.
+     * @param asses is value of asses gained by Team A
      */
     public void displayAssesTeamA(int asses) {
         TextView scoreView = (TextView) findViewById(R.id.asses_team_a);
@@ -178,6 +193,7 @@ public class MainActivity extends AppCompatActivity {
 
     /**
      * Displays asses for team B.
+     * @param asses is value of asses gained by Team B
      */
     public void displayAssesTeamB(int asses) {
         TextView scoreView = (TextView) findViewById(R.id.asses_team_b);

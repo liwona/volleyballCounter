@@ -35,9 +35,9 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:gravity="center_horizontal"
-                    android:padding="12dp"
-                    android:text="Team A"
-                    android:textSize="18sp"
+                    android:padding="@dimen/padding_for_views"
+                    android:text="@string/team_a"
+                    android:textSize="@dimen/text_size_small"
                     android:textStyle="bold" />
 
                 <TextView
@@ -45,35 +45,28 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:gravity="center_horizontal"
-                    android:paddingBottom="10dp"
+                    android:paddingBottom="@dimen/padding_for_views"
                     android:text="0"
                     android:textColor="#000"
-                    android:textSize="56sp" />
+                    android:textSize="@dimen/text_size_large" />
 
                 <Button
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="18dp"
-                    android:layout_marginRight="18dp"
+                    android:layout_marginLeft="@dimen/margin_for_button"
+                    android:layout_marginRight="@dimen/margin_for_button"
                     android:onClick="pointForTeamA"
-                    android:text="Point for Team A" />
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginBottom="4dp"
-                    android:gravity="center_horizontal"
-                    android:text="test"
-                    android:textColor="#000"
-                    android:textSize="16sp" />
+                    android:textSize="@dimen/text_size_small"
+                    android:text="@string/points_for_a" />
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:gravity="center_horizontal"
-                    android:text="Sets:"
+                    android:text="@string/sets"
                     android:textColor="#000"
-                    android:textSize="18sp"
+                    android:padding="@dimen/padding_for_views"
+                    android:textSize="@dimen/text_size_small"
                     android:textStyle="bold" />
 
                 <TextView
@@ -83,7 +76,7 @@
                     android:gravity="center_horizontal"
                     android:text="0"
                     android:textColor="#000"
-                    android:textSize="50sp" />
+                    android:textSize="@dimen/text_size_medium" />
 
             </LinearLayout>
 
@@ -103,9 +96,9 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:gravity="center_horizontal"
-                    android:padding="12dp"
-                    android:text="Team B"
-                    android:textSize="18sp"
+                    android:padding="@dimen/padding_for_views"
+                    android:text="@string/team_b"
+                    android:textSize="@dimen/text_size_small"
                     android:textStyle="bold" />
 
                 <TextView
@@ -113,35 +106,27 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:gravity="center_horizontal"
-                    android:paddingBottom="10dp"
+                    android:paddingBottom="@dimen/padding_for_views"
                     android:text="0"
                     android:textColor="#000"
-                    android:textSize="56sp" />
+                    android:textSize="@dimen/text_size_large" />
 
                 <Button
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="18dp"
-                    android:layout_marginRight="18dp"
+                    android:layout_marginLeft="@dimen/margin_for_button"
+                    android:layout_marginRight="@dimen/margin_for_button"
                     android:onClick="pointForTeamB"
-                    android:text="Point for Team B" />
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginBottom="4dp"
-                    android:gravity="center_horizontal"
-                    android:text="test"
-                    android:textColor="#000"
-                    android:textSize="16sp" />
+                    android:text="@string/points_for_b" />
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:gravity="center_horizontal"
-                    android:text="Sets:"
+                    android:text="@string/sets"
                     android:textColor="#000"
-                    android:textSize="18sp"
+                    android:padding="@dimen/padding_for_views"
+                    android:textSize="@dimen/text_size_small"
                     android:textStyle="bold" />
 
                 <TextView
@@ -151,7 +136,7 @@
                     android:gravity="center_horizontal"
                     android:text="0"
                     android:textColor="#000"
-                    android:textSize="50sp" />
+                    android:textSize="@dimen/text_size_medium" />
 
             </LinearLayout>
 
@@ -165,7 +150,7 @@
             android:layout_centerHorizontal="true"
             android:text=""
             android:textColor="#F00"
-            android:textSize="18sp"
+            android:textSize="@dimen/text_size_small"
             android:textStyle="bold"
             android:textAlignment="center"
             android:padding="20dp"/>
@@ -197,8 +182,8 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:gravity="center_horizontal"
-                            android:text="Asses Team A"
-                            android:textSize="14sp"
+                            android:text="@string/asses_a"
+                            android:textSize="@dimen/text_size_small"
                             android:textStyle="bold" />
 
                         <TextView
@@ -208,17 +193,18 @@
                             android:gravity="center_horizontal"
                             android:padding="6dp"
                             android:text="0"
-                            android:textSize="14sp"
+                            android:textSize="@dimen/text_size_small"
                             android:textStyle="bold" />
 
                         <Button
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_marginBottom="8dp"
-                            android:layout_marginLeft="18dp"
-                            android:layout_marginRight="18dp"
+                            android:layout_marginLeft="@dimen/margin_for_button"
+                            android:layout_marginRight="@dimen/margin_for_button"
+                            android:textSize="@dimen/text_size_small"
                             android:onClick="assesTeamA"
-                            android:text="Ass for Team A" />
+                            android:text="@string/asses_for_a" />
 
                     </LinearLayout>
 
@@ -232,8 +218,8 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:gravity="center_horizontal"
-                            android:text="Asses Team B"
-                            android:textSize="14sp"
+                            android:text="@string/asses_b"
+                            android:textSize="@dimen/text_size_small"
                             android:textStyle="bold" />
 
                         <TextView
@@ -243,17 +229,18 @@
                             android:gravity="center_horizontal"
                             android:padding="6dp"
                             android:text="0"
-                            android:textSize="14sp"
+                            android:textSize="@dimen/text_size_small"
                             android:textStyle="bold" />
 
                         <Button
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_marginBottom="8dp"
-                            android:layout_marginLeft="18dp"
-                            android:layout_marginRight="18dp"
+                            android:layout_marginLeft="@dimen/margin_for_button"
+                            android:layout_marginRight="@dimen/margin_for_button"
+                            android:textSize="@dimen/text_size_small"
                             android:onClick="assesTeamB"
-                            android:text="Ass for Team B" />
+                            android:text="@string/asses_for_b" />
                     </LinearLayout>
                 </LinearLayout>
 
@@ -264,7 +251,7 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
                     android:onClick="reset"
-                    android:text="reset" />
+                    android:text="@string/reset_button" />
 
             </LinearLayout>
         </RelativeLayout>

@@ -1,3 +1,13 @@
 <resources>
     <string name="app_name">VolleyballCounter</string>
+    <string name="team_a">Team A</string>
+    <string name="team_b">Team B</string>
+    <string name="sets">Sets:</string>
+    <string name="points_for_a">Point for Team A</string>
+    <string name="points_for_b">Point for Team B</string>
+    <string name="asses_a">Asses Team A</string>
+    <string name="asses_b">Asses Team B</string>
+    <string name="asses_for_a">Asses Team B</string>
+    <string name="asses_for_b">Asses Team B</string>
+    <string name="reset_button">Reset</string>
 </resources>
