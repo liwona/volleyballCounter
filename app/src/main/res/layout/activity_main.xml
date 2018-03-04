@@ -53,6 +53,7 @@
                     android:textSize="@dimen/text_size_large" />
 
                 <Button
+                    android:id="@+id/button_points_team_a"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="@dimen/margin_for_button"
@@ -114,6 +115,7 @@
                     android:textSize="@dimen/text_size_large" />
 
                 <Button
+                    android:id="@+id/button_points_team_b"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="@dimen/margin_for_button"

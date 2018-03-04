@@ -108,6 +108,8 @@ public class MainActivity extends AppCompatActivity {
      * Reset points and sets for Team A and Team B.
      */
     public void reset (View v) {
+        findViewById(R.id.button_points_team_a).setEnabled(true);
+        findViewById(R.id.button_points_team_b).setEnabled(true);
         pointsReset();
         setsReset();
         assesReset();
@@ -131,6 +133,10 @@ public class MainActivity extends AppCompatActivity {
     public void gameMessage (String name) {
         if (setsForTeamA == 3 || setsForTeamB == 3)
         {
+            pointsForTeamA = 0;
+            pointsForTeamB = 0;
+            findViewById(R.id.button_points_team_a).setEnabled(false);
+            findViewById(R.id.button_points_team_b).setEnabled(false);
             displayGameMessage("Game over! " + name + " won!\nPress RESET" );
         }
     }
