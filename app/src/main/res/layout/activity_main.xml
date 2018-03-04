@@ -14,10 +14,11 @@
         tools:context="com.example.android.volleyballcounter.MainActivity">
 
         <ImageView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
             android:alpha="0.3"
-            android:src="@drawable/ball" />
+            android:src="@drawable/ball_3" />
 
         <LinearLayout
             android:id="@+id/game"
@@ -37,9 +38,9 @@
                     android:gravity="center_horizontal"
                     android:padding="@dimen/padding_for_views"
                     android:text="@string/team_a"
+                    android:textColor="#000"
                     android:textSize="@dimen/text_size_small"
-                    android:textStyle="bold"
-                    android:textColor="#000"/>
+                    android:textStyle="bold" />
 
                 <TextView
                     android:id="@+id/points_a_team"
@@ -63,9 +64,9 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:gravity="center_horizontal"
+                    android:padding="@dimen/padding_for_views"
                     android:text="@string/sets"
                     android:textColor="#000"
-                    android:padding="@dimen/padding_for_views"
                     android:textSize="@dimen/text_size_small"
                     android:textStyle="bold" />
 
@@ -98,9 +99,9 @@
                     android:gravity="center_horizontal"
                     android:padding="@dimen/padding_for_views"
                     android:text="@string/team_b"
+                    android:textColor="#000"
                     android:textSize="@dimen/text_size_small"
-                    android:textStyle="bold"
-                    android:textColor="#000"/>
+                    android:textStyle="bold" />
 
                 <TextView
                     android:id="@+id/points_b_team"
@@ -124,9 +125,9 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:gravity="center_horizontal"
+                    android:padding="@dimen/padding_for_views"
                     android:text="@string/sets"
                     android:textColor="#000"
-                    android:padding="@dimen/padding_for_views"
                     android:textSize="@dimen/text_size_small"
                     android:textStyle="bold" />
 
@@ -149,112 +150,105 @@
             android:layout_height="wrap_content"
             android:layout_below="@id/game"
             android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:padding="20dp"
             android:text=""
+            android:textAlignment="center"
             android:textColor="#F00"
             android:textSize="@dimen/text_size_small"
-            android:textStyle="bold"
-            android:textAlignment="center"
-            android:padding="20dp"/>
+            android:textStyle="bold" />
 
-        <RelativeLayout
-            android:layout_width="wrap_content"
+        <LinearLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_below="@id/game_message"
-            >
+            android:layout_alignParentBottom="true"
+            android:orientation="vertical"
+            android:paddingBottom="20dp">
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:paddingBottom="20dp">
+                android:orientation="horizontal">
 
                 <LinearLayout
-                    android:layout_width="match_parent"
+                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:orientation="horizontal">
+                    android:layout_weight="1"
+                    android:orientation="vertical">
 
-                    <LinearLayout
-                        android:layout_width="0dp"
+                    <TextView
+                        android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:orientation="vertical">
+                        android:gravity="center_horizontal"
+                        android:text="@string/asses_a"
+                        android:textSize="@dimen/text_size_small"
+                        android:textStyle="bold" />
 
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:gravity="center_horizontal"
-                            android:text="@string/asses_a"
-                            android:textSize="@dimen/text_size_small"
-                            android:textStyle="bold" />
-
-                        <TextView
-                            android:id="@+id/asses_team_a"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:gravity="center_horizontal"
-                            android:padding="6dp"
-                            android:text="0"
-                            android:textSize="@dimen/text_size_small"
-                            android:textStyle="bold" />
-
-                        <Button
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_marginBottom="8dp"
-                            android:layout_marginLeft="@dimen/margin_for_button"
-                            android:layout_marginRight="@dimen/margin_for_button"
-                            android:onClick="assesTeamA"
-                            android:text="@string/asses_for_a" />
-
-                    </LinearLayout>
-
-                    <LinearLayout
-                        android:layout_width="0dp"
+                    <TextView
+                        android:id="@+id/asses_team_a"
+                        android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:orientation="vertical">
+                        android:gravity="center_horizontal"
+                        android:padding="6dp"
+                        android:text="0"
+                        android:textSize="@dimen/text_size_small"
+                        android:textStyle="bold" />
 
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:gravity="center_horizontal"
-                            android:text="@string/asses_b"
-                            android:textSize="@dimen/text_size_small"
-                            android:textStyle="bold" />
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dp"
+                        android:layout_marginLeft="@dimen/margin_for_button"
+                        android:layout_marginRight="@dimen/margin_for_button"
+                        android:onClick="assesTeamA"
+                        android:text="@string/asses_for_a" />
 
-                        <TextView
-                            android:id="@+id/asses_team_b"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:gravity="center_horizontal"
-                            android:padding="6dp"
-                            android:text="0"
-                            android:textSize="@dimen/text_size_small"
-                            android:textStyle="bold" />
-
-                        <Button
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_marginBottom="8dp"
-                            android:layout_marginLeft="@dimen/margin_for_button"
-                            android:layout_marginRight="@dimen/margin_for_button"
-                            android:onClick="assesTeamB"
-                            android:text="@string/asses_for_b" />
-                    </LinearLayout>
                 </LinearLayout>
 
-
-                <Button
-                    android:id="@+id/reset"
-                    android:layout_width="wrap_content"
+                <LinearLayout
+                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:layout_gravity="center_horizontal"
-                    android:onClick="reset"
-                    android:text="@string/reset_button" />
+                    android:layout_weight="1"
+                    android:orientation="vertical">
 
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:text="@string/asses_b"
+                        android:textSize="@dimen/text_size_small"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/asses_team_b"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:padding="6dp"
+                        android:text="0"
+                        android:textSize="@dimen/text_size_small"
+                        android:textStyle="bold" />
+
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dp"
+                        android:layout_marginLeft="@dimen/margin_for_button"
+                        android:layout_marginRight="@dimen/margin_for_button"
+                        android:onClick="assesTeamB"
+                        android:text="@string/asses_for_b" />
+                </LinearLayout>
             </LinearLayout>
-        </RelativeLayout>
 
+            <Button
+                android:id="@+id/reset"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:onClick="reset"
+                android:text="@string/reset_button" />
+
+        </LinearLayout>
 
     </RelativeLayout>
 </ScrollView>
